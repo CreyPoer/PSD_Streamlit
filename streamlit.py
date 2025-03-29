@@ -102,7 +102,7 @@ minmaxtesting = minmaxscaler.transform(fitur_test)
 with open('best_model_rf_minmax.pkl', 'rb') as file:
     rfmodel = pickle.load(file)
 
-rfmodel.fit(minmaxtraining, target_train)
+# rfmodel.fit(minmaxtraining, target_train)
 
 if st.button("Cek Prediksi"):
     st.write(data_implementasi)
